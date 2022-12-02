@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function formCheck(){
+		let title = document.form1.title.value; //body속 form찾는것.
+		let writer = document.forms[0].writer.value;
+		let regdate=document.forms[0].regdate.value;
+		let content=document.forms[0].content.vlaue; //글내용
+		
+		if(title==null||title==""){  //null값을 비교
+			alert('제목을 입력하세요'); //경고창 
+			document.forms[0].title.focus(); //해당 태그에 포커스를 준 뒤
+			return false; //false를 리턴
+		}
+	}
+</script>
+</head>
+<body>
+<!-- submit이벤트가 발생하면 formCheck()함수가 실행을 하고 
+실행결과가 true일 경우에 action이 실행이 된다. -->
+<form method="post" action="index.html" name="form1" onsubmit="return formCheck();">
+	제목:<input type="text" name="title"><br>
+	작성자: <input type="text" name="writer"><br>
+	날짜: <input type="date" name="regdate"><br>
+	content: <textarea rows="10" cols="20" name="content"></textarea><br>
+	<input type="submit" value="작성완료"><br>
+</form>
+</body>
+</html>

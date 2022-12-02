@@ -1,0 +1,690 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Noto Serif KR', serif; */
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-size: 15px;
+}
+
+.innerBox {
+    max-width: 1416px;
+    margin: 0 auto;
+    /* background-color: rgba(255, 0, 0, 0.2); */
+    position: relative;
+}
+
+.hamBtn {
+    display: none;
+}
+
+.phonNum {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.mobileNavBanner {
+    display: none;
+}
+
+.snsMobile {
+    display: none;
+}
+
+/* header */
+header {
+    background-color: white;
+    border-top: 4px solid #45B6BA;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.rightGnb,
+.leftGnb {
+    position: absolute;
+    top: 30px;
+}
+
+.rightGnb {
+    display: flex;
+    right: 10px;
+}
+
+.rightGnb>li {
+    padding-left: 20px;
+}
+
+.rightGnb>li>a {
+    color: #292929;
+    font-size: 16px;
+}
+
+form>input {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 270px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+form>a {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* 네비게이션 */
+#nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav>li {
+    padding: 20px 50px;
+    white-space: nowrap;
+    position: relative;
+}
+
+#nav:hover .sub {
+    display: block;
+}
+
+#nav>li>a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+#nav>li>a:hover{   
+    border-bottom: 2px solid #45B6BA;
+}
+.subBg {
+    display: none;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 90px;
+    width: 1416px;
+    height: 250px;
+    z-index: 100;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+    /* 메인보다 아래에 위치 */
+    top: 50px;
+}
+
+.sub>li>a {
+    line-height: 2;
+}
+
+.sub>li:hover a {
+    color: #45B6BA;
+    font-weight: bold;
+}
+
+
+/* mainBanner */
+#mainBanner {
+    position: relative;
+
+}
+
+#mainBanner>.imgBox {
+    text-align: center;
+    filter: brightness(0.75) contrast(0.8);
+    overflow: hidden;
+}
+
+#mainBanner>.imgBox>img {
+    height: 100%;
+}
+
+#mainBanner>.titleBox {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    animation-name: blink;
+    animation-duration: 1.5s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.titleBox>h2 {
+    font-size: 3em;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.titleBox>p {
+    font-size: 1.2em;
+}
+
+.titleBox>h2,
+.titleBox>p,
+.textElement,
+.textElement>a {
+    color: white;
+}
+
+#mainBanner .textElement {
+    position: absolute;
+    bottom: 350px;
+}
+
+/* #container */
+#container {
+    position: relative;
+
+}
+
+.menuSubList {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.menuSubList>li {
+    padding: 20px 80px;
+    font-weight: bold;
+    word-break: keep-all;
+    border-bottom: 5px solid transparent;
+}
+
+.menuSubList>li:hover {
+    border-bottom: 5px solid #45B6BA;
+}
+
+.menuSubList>li:hover a {
+    color: #45B6BA;
+    font-weight: bold;
+
+}
+
+.productWrap {
+    margin-top: 50px;
+}
+
+.productList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productList>li {
+    position: relative;
+    margin-bottom: 80px;
+    /* width: 32%; */
+}
+
+.productList>li>a img {
+    transition: 0.5s;
+}
+
+.productList>li>a:hover img {
+    filter: brightness(0.5);
+    transform: scale(0.98);
+}
+
+.productList>li:hover .shoppingIconWrap {
+    display: block;
+    z-index: 1000;
+}
+
+.productList>li>a>.textBox {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.textBox>.productName {}
+
+.shoppingIconWrap {
+    position: absolute;
+    left: 25px;
+    bottom: 100px;
+    z-index: 100;
+    display: none;
+}
+
+.shoppingIconWrap>div {
+    padding-top: 10px;
+}
+
+.shopping_cart,
+.shopping_basket {
+    width: 30px;
+}
+
+.shopping_cart img,
+.shopping_basket img {
+    width: 100%;
+
+}
+
+.newTag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #FFB301;
+    padding: 7px 20px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* pager */
+.pager {
+    display: flex;
+    justify-content: center;
+}
+
+.pager>a>img,
+.pager>ol>li {
+    padding: 0 3px;
+}
+
+.pager>a {
+    width: 20px;
+}
+
+.pager>a>img {
+    width: 100%;
+}
+
+.pager>ol {
+    display: flex;
+}
+
+.pager>ol a {
+    font-weight: bold;
+}
+
+.pager>ol>li>.this {
+    color: #45B6BA;
+}
+
+
+
+/* footer */
+footer>.innerBox {
+    display: flex;
+}
+
+.footTop {
+    padding-top: 100px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.footTop ul {
+    display: flex;
+    justify-content: end;
+}
+
+.footTop ul>li {
+    padding: 0 0 10px 30px;
+    font-weight: 400;
+}
+
+.footTop ul>li>a {
+    color: #333;
+}
+
+.arrowUp {
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.arrowUp>a {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    background: white;
+}
+
+.arrowUp img {
+    width: 20px;
+}
+
+.footLogo {
+    padding: 40px;
+}
+
+.footLogo img {
+    width: 200px;
+}
+
+.footMiddle {}
+
+.addressWrap {
+    position: absolute;
+    top: 70px;
+}
+
+address {
+    color: #666;
+}
+
+address span {
+    padding-right: 10px;
+}
+
+.copy {
+    position: absolute;
+    bottom: 25px;
+}
+
+@media screen and (max-width:1297px) {
+    .hamBtn {
+        display: block;
+        width: 45px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .rightGnb,
+    .leftGnb {
+        display: none;
+    }
+
+    /* 네비게이션 */
+    nav {
+        position: fixed;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        /* 옆으로치워둠 */
+        /* right: -100%; */
+        display: none;
+    }
+
+    #nav:hover .sub {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+        background: white;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        transform: translateX(0);
+        padding-top: 100px;
+    }
+
+    #nav>li {
+        border-bottom: 1px solid #ddd;
+    }
+
+    #nav>li:last-child {
+        border: none;
+    }
+
+    #nav>li>a {
+        color: #333;
+    }
+
+    #nav:hover .sub {
+        height: auto;
+    }
+
+    .sub {
+        position: static;
+        text-align: left;
+        text-indent: 20px;
+    }
+
+    .mobileNav,
+    .mobileNavBanner {
+        display: block;
+    }
+
+    .mobileNav{
+        position: absolute;
+        left: 0;
+        display: flex; /*안먹힘*/
+        justify-content: space-between;
+        width: 70%;
+        z-index: 100;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    .navLogo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .xBtn {
+        width: 50px;
+    }
+    .mloginBtn{
+        width: 50px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }  
+    .mloginBtn img{
+        width: 100%;
+    }
+
+    /* 본문 */
+    #mainBanner .textElement {
+        left: 5%;
+    }
+
+    .menuSubList>li {
+        padding: 15px 50px;
+    }
+
+    /* .productList {
+        justify-content: space-evenly;
+    } */
+
+    .productList>li>a>.imgBox {}
+
+    .productList>li>a>.imgBox img {
+        width: 100%;
+    }
+
+    /* footer */
+    .footTop ul>li {
+        padding: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .productList>li>a>.imgBox {}
+
+    .productList>li {
+        margin-bottom: 50px;
+        width: 48%;
+    }
+
+    /* footer */
+    .footTop ul>li {
+        font-size: 0.8em;
+    }
+
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+    .logo{
+        text-align: left;
+        padding: 20px;
+        width: 100px;
+    }   
+    .logo img{
+        width: 100%;
+    } 
+    #nav {
+        width: 100%;
+    }
+    #nav>li{
+        padding: 15px 30px;
+    }
+    #nav>li>a{
+        font-size: 1.4em;
+    }
+    .mobileNav {
+        width: 100%;
+    }    
+    .navLogo{
+        width: 80px;
+    }
+    .navLogo img{
+        width: 100%;
+    }
+    .xBtn{
+        width: 40px;
+    }
+
+    .menuSubList>li {
+        padding: 15px 40px;
+        font-size: 1.1em;
+    }
+
+    .shoppingIconWrap {
+        bottom: 80px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .productList>li>a>.imgBox {}
+
+    .menuSubList>li {}
+
+    /* footer */
+    footer>.innerBox {
+        display: block;
+    }
+
+    .snsMobile {
+        display: block;
+    }
+
+    .snsInfo>li div>img {
+        transform: scale(0.8);
+    }
+
+    .footTop ul,
+    .copy,
+    .snsMobile>.snsInfo {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        white-space: nowrap;
+    }
+
+    .footTop ul {
+        padding: 30px 0;
+    }
+
+    .footTop ul>li {
+        padding: 0 0 10px 7px;
+    }
+
+    .footTop ul>li>a {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .footLogo {
+        text-align: center;
+        padding: 80px 0 30px;
+    }
+
+    .footMiddle {
+        padding-bottom: 150px;
+    }
+
+    .addressWrap {
+        text-align: center;
+        position: static;
+    }
+
+    address {
+        padding: 0 30px;
+        font-size: 1em;
+    }
+
+    .snsMobile>.snsInfo {
+        display: flex;
+        bottom: 80px;
+    }
+
+    .snsMobile>.snsInfo>li span {
+        display: none;
+    }
+
+    .copy {
+        bottom: 20px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .titleBox>p {
+        font-size: 0.9em;
+    }
+
+    .menuSubList>li {
+        padding: 15px;
+    }
+
+    .productList>li>a>.imgBox {}
+
+    .newTag {
+        padding: 5px 10px;
+        font-size: 1.2em;
+    }
+
+    .shopping_cart,
+    .shopping_basket {
+        width: 20px;
+    }
+
+    .shoppingIconWrap {
+        right: 10px;
+        bottom: 70px;
+    }
+}

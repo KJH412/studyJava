@@ -1,0 +1,580 @@
+/* container */
+#container {
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+}
+
+/* top */
+.conTop {
+    background: url(../images/brand_bg_2.png) no-repeat;
+    background-position: center;
+
+}
+
+.topText,
+.topImgpWrap>li>p,
+.conBottom h2 {
+    text-align: center;
+}
+
+.topImgpWrap>li>p {
+    font-size: 1.1em;
+    padding-top: 20px;
+    color: #333;
+}
+
+.topText>h2 {
+    font-size: 4em;
+    color: #45B6BA;
+    animation-name: blink;
+    animation-duration: 1.5s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.topText>.subTitle {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 4;
+}
+
+.topText>p:last-child,
+.middleText>p {
+    font-size: 1.3em;
+}
+
+.topText>p:last-child {
+    margin: 0 auto;
+    width: 90%;
+    color: #666;
+}
+
+.topImgpWrap {
+    display: flex;
+    justify-content: center;
+
+}
+.topImgpWrap>li {
+    padding: 0 10px;
+    position: relative;
+
+}
+.topImgpWrap>li:nth-child(1){
+    animation-name: downAni;
+    animation-duration: 1s;
+}
+.topImgpWrap>li:nth-child(2){
+    animation-name: upAni;
+    animation-duration: 1.5s;
+}
+.topImgpWrap>li:nth-child(3){
+    animation-name: downAni;
+    animation-duration: 1s;
+}
+@keyframes upAni {
+    0%{
+        bottom: -80px;;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes downAni {
+    0%{
+        bottom: 80px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.topImgpWrap,
+.conMiddle,
+.conBottom {
+    /* margin: 100px 0 200px; */
+    /* innerBox에 처음에 auto준것을 0으로 취소해버려서 적용이 안됀것. */
+    margin: 100px auto 200px;
+}
+
+
+
+/* middle */
+.conMiddle {}
+
+.middleText {}
+
+.middleText>h2,
+.middleText>p {
+    padding-bottom: 30px;
+}
+
+.middleText>h2 {
+    font-size: 3em;
+    animation-name: blink;
+    animation-duration: 1.5s;
+}
+
+.middleText>p {
+    width: 70%;
+    word-break: keep-all;
+    color: #666;
+}
+
+.middleImgWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleImgWrap>li>.imgText {
+    word-break: keep-all;
+}
+
+.middleImgWrap>li {
+    position: relative;
+}
+
+.middleImgWrap>li>.mImgBox {
+    transition: 0.5s;
+    position: relative;
+}
+
+.middleImgWrap>li>.mImgBox::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+    opacity: 0.7;
+    transition: 0.6s;
+}
+
+.middleImgWrap>li:hover .hide {
+    /* display: block; */
+    opacity: 1;
+}
+.middleImgWrap>li:hover .plus{
+    display: none;
+}
+.middleImgWrap>li:hover .mImgBox::before {
+    height: 100%;
+}
+
+.imgText {
+    /* width: 400px; */
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+}
+
+.imgText>.imgTitle,
+.imgText>p:first-child {
+    font-weight: bold;
+}
+
+.imgText>.imgTitle {
+    font-size: 3.3em;
+}
+
+.imgText>p:first-child,
+.imgText>.hide {
+    font-size: 1.2em;
+}
+
+.imgText>.hide {
+    position: absolute;
+    bottom: 10px;
+    /* display: none; */
+    opacity: 0;
+    transition: 0.5s;
+}
+.imgText>.plus{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.imgText>.plus>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* bottom */
+.conBottom {
+    padding-top: 100px;
+}
+
+.conBottom h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 3;
+    white-space: nowrap;
+}
+
+.bImgBox {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 70px;
+    opacity: 0.4;
+    padding-bottom: 130px;
+    animation-name: blinkImg;
+    animation-duration: 1.5s;
+}
+
+@keyframes blinkImg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+
+.btnWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btnWrap>li {
+    margin: 0 20px;
+    /* padding: 20px 300px 20px 20px; */
+    border: 1px solid #666;
+    width: 100%;
+    line-height: 3;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.btnWrap>li:hover {
+    border: 1px solid transparent;
+    background-color: #45B6BA;
+}
+
+.btnWrap>li:hover a {
+    color: white;
+}
+
+.btnWrap>li>a {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.btnWrap>li>p {}
+
+.menuMore {}
+
+
+@media screen and (max-width:1297px) {
+    #container {
+        top: 80px;
+    }
+
+    body {
+        font-size: 13px;
+    }
+    
+    /* 네비게이션 */
+    nav {
+        position: fixed;       
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        /* 옆으로치워둠 */
+        /* right: -100%; */
+        display: none;
+    }
+    #nav:hover .sub{
+        display: none;
+    }
+    #nav {
+        display: block;
+        background: white;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        transform: translateX(0%);
+        padding-top: 100px;
+    }
+    #nav>li {
+        border-bottom: 1px solid #ddd;
+    }
+    #nav>li:last-child{
+        border: none;
+    }
+    #nav>li>a {
+        color: #333;
+    }
+    #nav:hover .sub {
+        height: auto;
+    }  
+    .sub {
+        position: static;
+        text-align: left;
+        text-indent: 20px;
+    }
+    .mobileNav,
+    .mobileNavBanner{
+        display: block;        
+    }
+    .mobileNav{
+        position: absolute;
+        left: 0;
+        display: flex; /*안먹힘*/
+        justify-content: space-between;
+        width: 70%;
+        z-index: 100;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    .navLogo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .xBtn{
+        width: 50px;
+    }
+
+    /*top본문*/
+    .topImgpWrap>li {
+        /* padding: 0 40px; */
+    }
+
+    /* middle 본문 */
+    .middleImgWrap {
+        justify-content: space-evenly;
+    }
+
+    .middleImgWrap>li {
+        width: 30%;
+    }
+
+    .middleImgWrap>li img {
+        width: 100%;
+    }
+
+    .middleText {
+        margin: 0 30px;
+    }
+
+    .middleText>h2,
+    .middleText>p {
+        padding-bottom: 20px;
+    }
+
+    .imgText {
+        top: 20px;
+        left: 20px;
+    }
+
+    .imgText>.imgTitle {}
+
+    .imgText>.hide {
+        display: block;
+    }
+
+    .middleImgWrap>li>.mImgBox::before {
+        height: 100%;
+    }
+
+    /* bottom본문 */
+
+}
+
+@media screen and (max-width:1000px) {
+    .topImgpWrap>li {
+        /* padding: 0; */
+        /* 수정필요.. */
+    }
+
+    .topImgpWrap,
+    .conMiddle,
+    .conBottom {
+        margin: 50px auto 150px;
+    }
+
+    .topText>p:last-child,
+    .middleText>p {
+        font-size: 1.1em;
+    }
+
+    .topText>p:last-child {}
+
+    /* middle본문 */
+    .imgText>.imgTitle {
+        font-size: 2.5em;
+    }
+
+    /* bottom본문 */
+    .conBottom {
+        padding: 200px 0 200px;
+    }
+
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    
+    .middleText>p {
+        width: 100%
+    }
+    .topImgpWrap {
+        padding-bottom: 100px;
+    }
+    .topImgpWrap>li {
+        height: 400px;
+    }
+
+    .topImgpWrap>li>a img {
+        height: 100%;
+    }
+    .topText>.subTitle {
+        font-size: 1.5em;
+    }
+    .imgText {
+        top: 30%;
+    }
+
+    .imgText>.hide {
+        bottom: 100px;
+    }
+
+    .imgText>.imgTitle {
+        font-size: 3.5em;
+    }
+
+    .imgText>p:first-child,
+    .imgText>.hide {
+        font-size: 1.2em;
+    }
+    .plus{
+        display: none;
+    }
+
+
+    .middleImgWrap>li>.imgText {
+        text-align: center;
+    }
+
+    .middleImgWrap {
+        display: block;
+        overflow: hidden;
+    }
+
+    .middleImgWrap>li {
+        width: 100%;
+        padding-bottom: 10px;
+        /* margin: 0 10px; */
+    }
+
+    .middleImgWrap>li>.mImgBox {
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .mImgBox>img {
+        height: 100%;
+    }
+
+    /* bottom */
+    .conBottom {
+        padding: 100px 0 0;
+    }
+    .conBottom h2{
+        font-size: 2em;
+    }
+
+    .btnWrap {
+        text-align: center;
+    }
+
+    .bImgBox {
+        bottom: 50px;
+        transform: translateX(50%) scale(0.8);
+    }
+
+    .btnWrap>li {
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .btnWrap>li>a {
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    /* top */
+    .topText>p:last-child {
+    }
+    .topText>.subTitle {
+        font-size: 1.4em;
+        line-height: 1.5;
+        word-break: keep-all;
+        padding: 20px 0;
+    }
+    .topText>.sub_txt{
+        display: none;
+    }
+   
+    .middleText>p {
+        /* text-align: center; */
+    }
+    /* bottom */
+    .btnWrap {
+        display: block;
+    }
+
+    .bImgBox {
+        bottom: 80px;
+    }
+
+    .conBottom h2 {
+        line-height: 0;
+    }
+    
+}
+
+@media screen and (max-width:360px) {
+    .topText>h2 {
+        font-size: 3.5em;
+    }
+   
+    .topImgpWrap{
+        margin: 40px auto 80px;
+    }
+    .imgText>p:first-child, .imgText>.hide {
+        font-size: 1.1em;
+    }
+    .middleText>p {
+        display: none;
+    }
+
+    .conBottom h2 {
+        font-size: 1.8em;
+    }
+}

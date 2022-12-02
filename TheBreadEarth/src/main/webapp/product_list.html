@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBreadEarth &#124; 비건베이커리</title>
+    <link rel="shortcut icon" href="images/icon_logo_shortcut.png">
+    <!-- Noto Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- Noto Serif Korean  -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Noto Sans Korean -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- js -->
+    <script src="js/javascript.js"></script>   
+</head>
+<!-- header -->
+<header>
+    <div class="subBg"></div>
+    <div class="innerBox">
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="TheBreadEarth logo"></a></h1>
+        <ul class="rightGnb">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">장바구니</a></li>
+        </ul>
+        <form class="leftGnb">
+            <input type="search">
+            <a href="#"><img src="images/icon_serch.png" alt="돋보기 아이콘"></a>
+        </form>
+        <nav>
+            <div class="mobileNav">
+                <div class="navLogo"><a href="#"><img src="images/logo.png" alt="TheBreadEarth logo"></a></div>
+                <div class="xBtn"><a href="#"><img src="images/cancel.svg" alt="cancel button"></a></div>
+                <div class="mloginBtn"><a href="login.html"><img src="images/loginBtn.svg" alt=""></a></div>
+            </div>
+            <ul id="nav">
+                <li>
+                    <a href="brand_story.html">브랜드 스토리</a>
+                    <ul class="sub">
+                        <li><a href="#">브랜드소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">매장소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="product_list.html">MENU</a>
+                    <ul class="sub">
+                        <li><a href="#">전체메뉴</a></li>
+                        <li><a href="#">베스트메뉴</a></li>
+                        <li><a href="#">베이커리</a></li>
+                        <li><a href="#">디저트</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">쿠키</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="product_md_list.html">이벤트 상품</a>
+                    <ul class="sub">
+                        <li><a href="#">특가상품</a></li>
+                        <li><a href="product_md_list.html">MD상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">리뷰</a>
+                    <ul class="sub">
+                        <li><a href="#">베스트 리뷰</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">공지사항</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="#">온라인상담</a></li>
+                        <li><a href="#">제품문의</a></li>
+                        <li><a href="#">QnA</a></li>
+                    </ul>
+                </li>
+                <li class="mobileNavBanner">
+                    <a href="#"><img src="images/mobile_banner.jpg" alt="모바일광고 배너"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hamBtn"><a href="#"><img src="images/hamBtn.svg" alt="ham button"></a></div>
+</header>
+<!-- #mainBanner -->
+<div id="mainBanner">
+    <div class="imgBox"><img src="images/mainbanner_subpage_menu.jpg" alt="banner image"></div>
+    <div class="titleBox">
+        <h2 class="title">MENU</h2>
+        <p>건강하고 맛있는 빵은 좋은 재료에서부터 시작됩니다.</p>
+    </div>
+    <div class="innerBox">
+        <p class="textElement"><a href="index.html"> HOME</a> > MENU > 전체메뉴</p>
+    </div>
+</div>
+<!-- container -->
+<div id="container">
+    <ul class="menuSubList">
+        <li class="active"><a href="#void">전체메뉴</a></li>
+        <li><a href="#void">베스트메뉴</a></li>
+        <li><a href="#void">베이커리</a></li>
+        <li><a href="#void">디저트</a></li>
+        <li><a href="#void">케이크</a></li>
+        <li><a href="#void">쿠키</a></li>
+    </ul>
+    <div class="innerBox">
+        <div class="productWrap">
+            <ul class="productList">
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_1.jpg" alt="/product_1"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                    <div class="newTag">NEW</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="imgBox"><img src="images/product_2.jpg" alt="/product_2"></div>
+                        <div class="textBox">
+                            <p class="productName">제품이름</p>
+                            <p class="productPrice">7,900원</p>
+                        </div>
+                    </a>
+                    <div class="shoppingIconWrap">
+                        <div class="shopping_cart"><a href="#"><img src="images/shopping-cart.svg"
+                                    alt="shopping cart"></a></div>
+                        <div class="shopping_basket"><a href="#"><img src="images/shopping-basket.svg"
+                                    alt="shopping basket"></a></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <a href="#void" class="first"><img src="images/first_pager.png" alt="첫 페이지"></a>
+                <a href="#void"><img src="images/before_pager.png" alt="이전 페이지"></a>
+                <ol>
+                    <li>
+                        <a href="#void" class="this">1</a>
+                    </li>
+                    <li>
+                        <a href="#void">2</a>
+                    </li>
+                </ol>
+                <a href="#void"><img src="images/next_pager.png" alt="다음 페이지"></a>
+                <a href="#void" class="last"><img src="images/last_pager.png" alt="마지막 페이지"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footTop">
+        <div class="innerBox">
+            <ul class="util">
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">법적고지</a></li>
+            </ul>
+        </div>
+        <div class="arrowUp">
+            <a href="#"><img src="images/scroll_arrow_up.png" alt="scroll-up"></a>
+        </div>
+    </div>
+    <div class="innerBox">
+        <h1 class="footLogo"><a href="#"><img src="images/foot_logo.png" alt="foot logo"></a></h1>
+        <div class="footMiddle">
+            <div class="addressWrap">
+                <address>
+                    <p><strong>사업자명 : </strong><span>(주)더브레드얼쓰</span><strong>대표이사 : </strong><span>김OO</span></p>
+                    <p><strong>사업자등록번호 : </strong><span>000-00-00000</span><strong>주소 : </strong><span>서울특별시 00구 00동
+                            00로 00 00타워 A동</span></p>
+                    <p><strong>메일 : </strong><span>TheBreadEarth@naver.com</span></p>
+                </address>
+            </div>
+            <div class="snsMobile">
+                <ul class="snsInfo">
+                    <li>
+                        <a href="#">
+                            <div><img src="images/icon_sns_facebook.png" alt="페이스북"></div>
+                            <span>페이스북</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="images/icon_sns_youtube.png" alt="유튜브"></div>
+                            <span>유튜브</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div><img src="images/icon_sns_insta.png" alt="인스타"></div>
+                            <span>인스타그램</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copy">copyrightⓒ 2022 All rights reserved by Kim Jung Hyun</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
