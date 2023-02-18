@@ -16,14 +16,14 @@ th{
 </head>
 <%
 	//1.데이타베이스 연결관련 변수 선언
-	Connection conn = null; //데이타베이스 접속하기위하 변수
+	Connection conn = null; //데이타베이스 접속하기위한 변수
 	PreparedStatement psmt = null; //작성한 sql문을 실행하기위한 변수
 	
 	//2.데이타베이스 연결 관련 정보를 문자열로 선언
 	String driverName = "oracle.jdbc.driver.OracleDriver";
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
 	
-	//3.try-cathc문으로 작성
+	//3.try-cat문으로 작성
 	try {
 		//jdbc드라이버 로드
 		Class.forName(driverName);
