@@ -49,7 +49,7 @@
                 <li><a href="pro/logoutPro.jsp">로그아웃</a></li>
                 <%
                        }
-				%>
+		%>
                 <li><a href="#void">회원가입</a></li>
                 <li><a href="#void">주문조회</a></li>
                 <li><a href="#void">장바구니</a></li>
